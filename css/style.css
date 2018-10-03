@@ -1,0 +1,164 @@
+#page {
+    background: #EFEFEF;
+}
+
+.menu-usernav-webapp-container {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.menu-usernav-webapp-container:last-child {
+    background: transparent;
+}
+
+.col-sm-9 {
+    background: #fff;
+    margin-top: 1rem;
+}
+
+.menu li {
+    padding-top: 0.5rem;
+}
+
+.maccount {
+    padding: 1rem;
+}
+
+.webapp_avatar {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.col-sm-4.webapp_left {
+    text-align: center;
+}
+
+.user_data div {
+    padding-bottom: 0.5rem;
+}
+
+.col-sm-12.profile_nav_tabs .single_tab {
+    display: none;
+}
+
+.col-sm-12.profile_nav_tabs .user-badges {
+    /*display: block;*/
+}
+
+.col-sm-12.profile_nav_tabs div {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.earn_pews_tab .pagination.pagination-lg {
+    display: inline-flex !important;
+}
+
+.single_tab div {
+    padding: 0 !important;
+    margin: 0;
+}
+
+.pew_bank_btn, .pews_title {
+    margin-bottom: 1rem !important;
+}
+
+.earn_pews_tab .page-link {
+    font-family: 'Russo One', sans-serif;
+}
+
+.earn_pews_tab li:first-child a {
+    color: black !important;
+}
+
+.earn_pews_tab li:last-child a {
+    color: #6E8067 !important;
+}
+
+.earn_pews_tab_2 li:first-child a {
+    color: #6E8067 !important;
+
+}
+
+.earn_pews_tab_2 li:last-child a {
+    color: black !important;
+}
+
+.card-body {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.card.text-center {
+    width: 85%;
+    margin-bottom: 1rem;
+}
+
+.card .btn-primary {
+    background: #6E8067;
+}
+
+.gun_wall .card {
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.gun_wall .card-body {
+    padding-left: 1rem !important;
+}
+
+.gun_wall .card-body img {
+    width: 50%;
+}
+
+.gun_wall .card-body div {
+    text-align: center;
+}
+
+.gun_name {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.gun_wall .card:hover {
+    background: gray;
+}
+
+.gun_opts span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.gun_opts {
+    display: none;
+}
+
+.bimber-mycred-widget .g1-alpha.g1-alpha-1st {
+    color: #000;
+}
+
+.bimber-mycred-widget .g1-more-results {
+    display: none;
+}
+
+.menu-usernav-webapp-container .mycred-my-rank {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.webapp_sidebar_div {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.webapp_sidebar_div .rounded_title {
+    font-weight: lighter;
+    font-size: 1rem;
+    margin: 0;
+}
+
+#menu-bp li a:hover {
+    text-decoration: none !important;
+}

@@ -1,0 +1,9 @@
+{
+  "minimum-stability": "dev",
+  "require": {
+    "pecee/simple-router": "dev-master"
+  },
+  "require-dev": {
+    "kint-php/kint": "dev-master"
+  }
+}
