@@ -67,6 +67,7 @@ $current_user = wp_get_current_user();
                             <div class="user-snax_votes single_tab"> <?php include "votes.php"; ?> </div>
                             <div class="user-activity single_tab"> <?php include "activity.php"; ?> </div>
                             <div class="gun_wall single_tab"> <?php include "gun_wall.php"; ?> </div>
+                            <div class="user-orders single_tab"> <?php include "user_orders.php"; ?> </div>
 
 
                         </div>
@@ -102,8 +103,16 @@ $current_user = wp_get_current_user();
 <div class="change_password">
         <h1>Change Password</h1>
         <form id="pewpew_change_password" method="post">
-            <input type="password" name="change_password" id="change_password"  multiple="false" />
-            <input id="submit_change_password" name="submit_change_password" type="submit" value="Submit" />
+
+            <div><span>Old Password: </span> <input type="password" name="change_password_old" id="change_password_old"  multiple="false" /><br></div>
+
+
+            <div><span>New Password: </span> <input type="password" name="change_password" id="change_password"  multiple="false" /><br></div>
+
+
+            <div><span>Retype New Password: </span> <input type="password" name="change_password_re" id="change_password_re"  multiple="false" /><br></div>
+
+            <div><input id="submit_change_password" name="submit_change_password" type="submit" value="Submit" /></div>
         </form>
 </div>
 

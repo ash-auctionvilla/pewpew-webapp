@@ -6,12 +6,25 @@
 
 <div class="pew_bank_btn">
 
-    <button type="button" class="btn btn-primary">
-        Current Pews <span class="badge badge-light">4</span>
+    <button type="button" class="btn btn-danger">
+        Current Pews: <span class="badge badge-light">
+            <?php
+
+            _e(mycred_render_shortcode_total([]));
+
+            ?>
+        </span>
     </button>
 
-    <button type="button" class="btn btn-danger">
-        Lifetime Pews <span class="badge badge-light">4</span>
+    <button type="button" class="btn btn-primary">
+        Lifetime Pews: <span class="badge badge-light">
+                        <?php
+
+                        _e(mycred_render_shortcode_total([]));
+
+                        ?>
+
+        </span>
     </button>
 
 
@@ -21,12 +34,12 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm">
 
             <div class="earn_pews_tab">
                 <nav aria-label="earn_pews_tab">
                     <ul class="pagination pagination-lg">
-                        <li class="page-item"><a class="page-link" href="#" tabindex="-1">REWARDS</a></li>
+                        <li class="page-item"><a class="page-link" href="#" tabindex="-1">WAYS TO EARN</a></li>
                         <li class="page-item"><a class="page-link" href="#" tabindex="-1">EARN MORE</a></li>
                     </ul>
                 </nav>
@@ -78,66 +91,6 @@
 
                 </div>
             </div>
-
-
-        </div>
-        <div class="col-sm-6">
-
-            <div class="earn_pews_tab earn_pews_tab_2">
-                <nav aria-label="earn_pews_tab">
-                    <ul class="pagination pagination-lg">
-                        <li class="page-item"><a class="page-link" href="#" tabindex="-1">REWARDS</a></li>
-                        <li class="page-item"><a class="page-link" href="#" tabindex="-1">EARN MORE</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="card text-center">
-                <div class="card-body">
-
-                    <div class="container">
-                        <div class="row">
-
-                            <div class="col-sm-3">
-                                <span class="oi oi-bug"></span>
-                            </div>
-
-                            <div class="col-sm-6">
-                                Sample Text 1
-                            </div>
-                            <div class="col-sm-3">
-                                <button type="button" class="btn btn-primary">Share</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card text-center">
-                <div class="card-body">
-
-                    <div class="container">
-                        <div class="row">
-
-                            <div class="col-sm-3">
-                                <span class="oi oi-bug"></span>
-                            </div>
-
-                            <div class="col-sm-6">
-                                Sample Text 2
-                            </div>
-                            <div class="col-sm-3">
-                                <button type="button" class="btn btn-primary">Share</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
 
 
         </div>

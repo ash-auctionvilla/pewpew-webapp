@@ -56,6 +56,12 @@
 }
 
 .single_tab div {
+    padding: 0;
+    margin: 0;
+}
+
+
+.user-mycred-history.single_tab div {
     padding: 0 !important;
     margin: 0;
 }
@@ -161,4 +167,26 @@
 
 #menu-bp li a:hover {
     text-decoration: none !important;
+}
+
+#pewpew_change_password > div {
+    margin-bottom: 0.5rem;
+}
+
+.snax-votes .card-body {
+    padding: 1rem;
+}
+
+.snax-votes .card {
+    margin: 1rem 0;
+}
+
+.snax-votes .snax-voting-details {
+    display: none;
+}
+
+.pew_bank_btn .btn-primary {
+    color: red;
+    background-color: #afb1b3;
+    border-color: #afb1b3;
 }

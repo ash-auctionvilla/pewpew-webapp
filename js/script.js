@@ -9,6 +9,7 @@ jQuery(document).ready(function($) {
             this.top_pro_bar();
             this.gun_wall();
             this.webapp_sidebar();
+            window.get_user_order = this.get_user_order;
         },
 
         remove_advert: function () {
@@ -69,6 +70,26 @@ jQuery(document).ready(function($) {
 
         },
 
+        get_user_order: function () {
+
+            var form_data = new FormData();
+            form_data.append('action', 'get_shopify_orders');
+
+            $.ajax({
+                url: window.wp_ajax_url,
+                type: 'post',
+                contentType: false,
+                processData: false,
+                data: form_data,
+                success: function (response) {
+                    response = $.parseJSON(response);
+                    console.log(response);
+                }
+
+            });
+
+        },
+
         change_password: function () {
             let change_password = $(".change_password").clone();
             $(".change_password").remove();
@@ -90,20 +111,36 @@ jQuery(document).ready(function($) {
                 var form_data = new FormData();
                 form_data.append('action', 'webapp_change_password');
                 form_data.append('password', $(this).find("#change_password").val());
+                form_data.append('old_password', $(this).find("#change_password_old").val());
+
                 console.log(form_data);
 
-                $.ajax({
-                    url: window.wp_ajax_url,
-                    type: 'post',
-                    contentType: false,
-                    processData: false,
-                    data: form_data,
-                    success: function (response) {
-                        response = $.parseJSON(response);
-                        location.reload();
-                    }
+                $("#pewpew_change_password").find(".notice").remove();
 
-                });
+                $pass = $("#change_password").val();
+                $pass_re = $("#change_password_re").val();
+
+                if ($pass == $pass_re) {
+
+
+                    $.ajax({
+                        url: window.wp_ajax_url,
+                        type: 'post',
+                        contentType: false,
+                        processData: false,
+                        data: form_data,
+                        success: function (response) {
+                            response = $.parseJSON(response);
+                            location.reload();
+                            console.log(response);
+                        }
+
+                    });
+
+                } else
+                    $("#pewpew_change_password").prepend("<div class='notice'>Please type same password for new and retype new password!</div>")
+
+                return;
 
 
             });
@@ -123,6 +160,7 @@ jQuery(document).ready(function($) {
             $("#menu-bp").find("li").remove();
             $("#menu-bp").append(ranks)
             orders.find("a").text("ORDERS");
+            orders.find("a").attr("id", "user-orders");
             $("#menu-bp").append(orders.get(0).outerHTML);
 
             $("#menu-bp").append(pews)
